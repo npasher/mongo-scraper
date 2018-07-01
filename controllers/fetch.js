@@ -11,7 +11,7 @@ module.exports={
       .then(function(dbHeadline){
         if (dbHeadline.length===0){
           res.json({
-            message: "New articles not found. Please check back later."
+            message: "No new articles found. Please check back later."
           });
         }else{
           res.json({//Sends back number of new articles scraped.//
