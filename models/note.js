@@ -1,7 +1,6 @@
 // Note Model.//
 
-// Requiring Mongoose.//
-let mongoose=require("mongoose");
+let mongoose=require("mongoose");// Requiring Mongoose.//
 let Schema=mongoose.Schema;//Schema creation utilizing Mongoose's method.//
 
 let noteSchema=new Schema({//Creation of headlineSchema.//

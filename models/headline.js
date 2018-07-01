@@ -1,7 +1,6 @@
 //Headline Model.//
 
-//Requiring Mongoose.//
-const mongoose=require("mongoose");
+const mongoose=require("mongoose");//Requiring Mongoose.//
 
 let Schema=mongoose.Schema;//Schema creation utilizing Mongoose's method.//
 
