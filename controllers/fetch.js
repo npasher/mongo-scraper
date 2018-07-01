@@ -15,7 +15,7 @@ module.exports={
           });
         }else{
           res.json({//Sends back number of new articles scraped.//
-            message:"Added:" +dbHeadline.length+" new articles."
+            message:"Added:"+dbHeadline.length+" new articles."
           });
         }
       })
