@@ -1,4 +1,4 @@
 module.exports={
-  Headline:require("./headline"),
-  Note:require("./note")
+  Headline:require("./Headline"),
+  Note:require("./Note")
 };
