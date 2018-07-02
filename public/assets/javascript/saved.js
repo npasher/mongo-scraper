@@ -123,20 +123,20 @@ $(document).ready(function(){
         "<hr />",
         "<ul class='list-group note-container'>",
         "</ul>",
-        "<textarea placeholder='New Note' rows='4' cols='60'></textarea>",
+        "<textarea placeholder='New Note' rows='4' cols='42'></textarea>",
         "<button class='btn btn-success save'>Save Note</button>",
         "</div>"
       ].join("");
       bootbox.dialog({//Adds HTML to the modal.//
-        message: modalText,
-        closeButton: true
+        message:modalText,
+        closeButton:true
       });
       let noteData={
-        _id: currentArticle._id,
+        _id:currentArticle._id,
         notes:data || []
       };
 
-      $(".btn.save").data("article", noteData);//Article and article notes added to save button.//
+      $(".btn.save").data("article",noteData);//Article and article notes added to save button.//
       renderNotesList(noteData);//Populates note HTML to modal.//
     });
   }
@@ -147,8 +147,8 @@ $(document).ready(function(){
  
     if (newNote){//Formats typed data and posts to the /notes route and noteData.//
       noteData={
-        _id: $(this).data("article")._id,
-        noteText: newNote
+        _id:$(this).data("article")._id,
+        noteText:newNote
       };
       $.post("/api/notes",noteData).then(function(){
         bootbox.hideAll();//Modal closed on completion.//
