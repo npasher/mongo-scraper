@@ -4,7 +4,7 @@ router.get("/",function(req,res){//Homepage rendered.//
   res.render("home");
 });
 
-router.get("/saved",function(req,res){//Saved handlebars saved.//
+router.get("/saved",function(req,res){//Rendered handlebars saved.//
   res.render("saved");
 });
 
