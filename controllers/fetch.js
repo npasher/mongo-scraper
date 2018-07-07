@@ -11,11 +11,11 @@ module.exports={
       .then(function(dbHeadline){
         if (dbHeadline.length===0){
           res.json({
-            message: "No new articles found. Please check back later."
+            message: "New articles not found. Please check back later."
           });
         }else{
           res.json({//Sends back number of new articles scraped.//
-            message:"Added:"+dbHeadline.length+" new articles."
+            message:"Added: "+dbHeadline.length+" new articles."
           });
         }
       })
