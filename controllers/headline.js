@@ -15,7 +15,7 @@ module.exports={
     });
   },
   update:function(req,res){//Update user specified headlines.//
-    db.Headline.findOneAndUpdate({ _id:req.params.id },{ $set:req.body},{new:true}).then(function(dbHeadline){
+    db.Headline.findOneAndUpdate({_id:req.params.id},{$set:req.body},{new:true}).then(function(dbHeadline){
       res.json(dbHeadline);
     });
   }
