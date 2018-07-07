@@ -4,7 +4,7 @@ const mongoose=require("mongoose");
 const exphbs=require("express-handlebars");
 const bodyParser= require("body-parser");
 
-const PORT=process.env.PORT || 3001;
+const PORT=process.env.PORT || 3000;
 
 const app=express();//Intializing Express.//
 
@@ -23,8 +23,7 @@ app.use(bodyParser.json());
 app.use(routes);//Route use.//
 
 //Use the deployed database otherwise use the local mongoHeadlines database.//
-const MONGODB_URI=process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines"
-mongoose.connect(MONGODB_URI); 
+var MONGODB_URI=process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 mongoose.Promise=Promise;//Assigns mongoose promise library.//
 mongoose.connect(MONGODB_URI);//Connect to Mongo DB.//
