@@ -52,7 +52,7 @@ $(document).ready(function(){
       ].join("")
     );
 
-    panel.data("_id", article._id);//Attaches user selected aricle id to jQuery element.//
+    panel.data("_id",article._id);//Attaches user selected aricle id to jQuery element.//
     return panel;//Returns element.//
   }
   function renderEmpty(){//Renders HTML to the page if articles non-exsisting.//
@@ -64,7 +64,7 @@ $(document).ready(function(){
         "</div>",
         "<div class='panel panel-default'>",
         "<div class='panel-heading text-center'>",
-        "<h4>Browse Available Articles?</h4>",
+        "<h4>Scrape Available Articles?</h4>",
         "</div>",
         "<div class='panel-body text-center'>",
         "<h4><a href='/'>Browse Articles</a></h4>",
