@@ -4,7 +4,7 @@ module.exports={
   findAll:function(req,res){//Finds all headlines and sorts by date.//
     db.Headline
       .find(req.query)
-      .sort({ date: -1 })
+      .sort({date: -1})
       .then(function(dbHeadline){
         res.json(dbHeadline);
       });
