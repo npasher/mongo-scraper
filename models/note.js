@@ -3,7 +3,7 @@
 let mongoose=require("mongoose");// Requiring Mongoose.//
 let Schema=mongoose.Schema;//Schema creation utilizing Mongoose's method.//
 
-let noteSchema=new Schema({//Creation of headlineSchema.//
+let noteSchema=new Schema({//Creation of the headlineSchema.//
 
   _headlineId:{//Headline is the associated article with note.//
     type:Schema.Types.ObjectId,
