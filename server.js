@@ -23,7 +23,8 @@ app.use(bodyParser.json());
 app.use(routes);//Route use.//
 
 //Use the deployed database otherwise use the local mongoHeadlines database.//
-let MONGODB_URI=process.env.MONGODB_URI || mongoose.connect(MONGODB_URI); // "mongodb://localhost/mongoHeadlines"//
+let MONGODB_URI=process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines"
+mongoose.connect(MONGODB_URI); 
 
 mongoose.Promise=Promise;//Assigns mongoose promise library.//
 mongoose.connect(MONGODB_URI);//Connect to Mongo DB.//
